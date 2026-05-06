@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AQUACARE | Report Pollution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="AquaCare Logo" width="60">
+            AQUACARE
+        </div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="events.html">EVENTS</a>
+            <a href="report.html" class="active">REPORT</a>
+            <a href="learn.html">LEARN</a>
+        </nav>
+    </header>
+
+    <main>
+    <section class="report-layout">
+        <div class="report-text">
+            <h1>REPORT POLLUTION</h1>
+            <p>Help us identify polluted areas by submitting a report with photos and location data.</p>
+        </div>
+
+       
+        <form class="report-form" action="#" method="POST" enctype="multipart/form-data">
+            
+            
+            <label class="upload-area" for="file-upload">
+                <img src="uploadphoto.png"Upload" width="40"><br>
+                <span>Upload Photo</span>
+                <input type="file" id="file-upload" name="photo" accept="image/*" class="hidden-input">
+            </label>
+
+            <!-- Location Input -->
+            <input type="text" class="input-field" name="location" placeholder="📍 Enter Location" required>
+
+            <!-- Description Textarea -->
+            <textarea class="input-field description-field" name="description" placeholder="📋 Enter Description" rows="4"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">SUBMIT REPORT</button>
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2026 AQUACARE. Every report makes a difference.</p>
+    </footer>
+</body>
+</html>
